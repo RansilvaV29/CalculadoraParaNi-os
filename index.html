@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Arrastrable</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Calculadora Arrastrable</h1>
+    <p>Arrastra los números y el operador al área para calcular.</p>
+
+    <!-- Área de selección -->
+    <div class="container">
+        <div id="numbers" class="numbers-container">
+            <div class="drag-item" draggable="true" data-value="1">1</div>
+            <div class="drag-item" draggable="true" data-value="2">2</div>
+            <div class="drag-item" draggable="true" data-value="3">3</div>
+            <div class="drag-item" draggable="true" data-value="4">4</div>
+            <div class="drag-item" draggable="true" data-value="5">5</div>
+            <div class="drag-item" draggable="true" data-value="6">6</div>
+            <div class="drag-item" draggable="true" data-value="7">7</div>
+            <div class="drag-item" draggable="true" data-value="8">8</div>
+            <div class="drag-item" draggable="true" data-value="9">9</div>
+        </div>
+        <div id="operators" class="operators-container">
+            <div class="drag-item" draggable="true" data-value="+">+</div>
+            <div class="drag-item" draggable="true" data-value="-">-</div>
+        </div>
+    </div>
+
+    <!-- Área de cálculo -->
+    <div class="container">
+        <div id="num1" class="drop-zone" data-type="number">Número 1</div>
+        <div id="operator" class="drop-zone" data-type="operator">Operador</div>
+        <div id="num2" class="drop-zone" data-type="number">Número 2</div>
+    </div>
+
+    <!-- Resultado -->
+    <div id="result">Resultado: --</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
